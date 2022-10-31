@@ -4,7 +4,7 @@ import { ClientProxy } from '@nestjs/microservices';
 @Injectable()
 export class AppService {
   constructor(
-    @Inject('PEOPLE_MODULE') private readonly peopleClient: ClientProxy,
+    @Inject('PEOPLE_SERVICE') private readonly peopleClient: ClientProxy,
   ) {}
 
   getHello(): string {
